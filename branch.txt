@@ -1,8 +1,10 @@
-1.Ada decides to add a new feature or part to the code. She creates a new feature branch off of master:
+1. Ada decides to add a new feature or part to the code. She creates a new feature branch off of master:
 
 git checkout master
 git checkout -b adas-feature
-Ada does some work on this feature
+
+
+2. Ada does some work on this feature
 
 # work is done outside of terminal
 
@@ -10,10 +12,12 @@ git add .
 git commit -m "Add progress on feature"
 
 
-2.Ada takes a break, pushing her changes to GitHub
+3. Ada takes a break, pushing her changes to GitHub
 
 git push -u origin adas-feature
-After talking to Ada, Bebe decides to help finish up the feature. She checks out the branch and makes some changes, then pushes them back to GitHub
+
+
+4. After talking to Ada, Bebe decides to help finish up the feature. She checks out the branch and makes some changes, then pushes them back to GitHub
 
 # fetch will "download" commits from GitHub, without merging them
 git fetch origin
@@ -24,10 +28,14 @@ git checkout adas-feature
 git add .
 git commit -m "Add more progress on feature"
 git push origin adas-feature
-Ada downloads Bebe’s changes
+
+
+5. Ada downloads Bebe’s changes
 
 git pull origin adas-feature
-Ada decides the feature is finished, and merges it back into master. But first, she makes sure she has the latest version of the master code to integrate her changes with
+
+
+6. Ada decides the feature is finished, and merges it back into master. But first, she makes sure she has the latest version of the master code to integrate her changes with
 
 git checkout master  # switch to master
 git pull origin master  # download any changes
@@ -36,4 +44,6 @@ git merge adas-feature  # merge the feature into the master branch
 # fix any merge conflicts!!
 
 git push origin master  # upload the updated code to master
-And now that the feature has been successfully added to the project, Ada can delete the feature branch (using git branch -d branch_name). See also here.
+
+
+7. And now that the feature has been successfully added to the project, Ada can delete the feature branch (using git branch -d branch_name). See also here.
