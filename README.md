@@ -1,4 +1,4 @@
-#Fork and Pull Request
+Fork and Pull Request
 1. Fork repo to your own account
 2. git clone https://github.com/SorawitChok/Git-CheatSheet.git
 3. Coding
