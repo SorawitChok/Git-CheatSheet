@@ -1,0 +1,11 @@
+# Begin your work session by pulling in changes from GitHub
+git pull origin master
+
+# If necessary, resolve any merge conflicts and commit them
+git add .
+git commit -m "Merge in changes from GitHub"
+
+# Do your work, then add, commit and push
+git add .
+git commit -m "Make progress on feature X"
+git push origin master
